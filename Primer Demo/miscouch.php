@@ -35,7 +35,7 @@ $sql= mysql_query("SELECT * FROM usuarios  WHERE mail='$mail'",$con);
 					?>	
 						<div id="botonesperfil">
 								<a id="modificarperfil" href="modificarperfil.php" class="btn btn-success"> Modificar Perfil </a>
-								<a id="uploadCouch" href="uploadcouch.php" class="btn btn-success"> Publicar Couch </a>
+								
 						</div>
 				<?php
 				}else{ 
@@ -43,7 +43,7 @@ $sql= mysql_query("SELECT * FROM usuarios  WHERE mail='$mail'",$con);
 						<div id="botonesperfilad">
 								<a href="agregartipocouch.php" class="btn btn-success"> Administrar Tipos de Couch </a>
 								<a href="modificarperfil.php" class="btn btn-success"> Modificar Perfil </a>
-								<a id="uploadCouch" href="uploadcouch.php" class="btn btn-success"> Publicar Couch </a>
+
 						</div>
 				<?php
 				}
