@@ -1,0 +1,18 @@
+#divquienessomos{
+	height:86%;
+	width:100%;
+	background-image : url("../imagenes/mundo.jpg"); 
+	background-size: cover;
+    background-position: center;
+}
+#contenedordeparrafo{
+	width:55%;
+	margin-left:22%;
+	padding-top:15%; 
+}
+#parrafoquienessomos{
+	text-align:justify;
+	color:white;
+	font-family:Helvetica;
+	font-weight: 900;
+}

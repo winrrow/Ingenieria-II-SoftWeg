@@ -1,0 +1,59 @@
+#modificarperfil{
+	margin-left:35%;
+}
+#mailspan{
+	margin-top:1%;
+}
+#mailRegistro{
+	width:50%;
+}
+#pnombre{
+	margin-top:1%;
+}
+#nombre{
+	width:50%;
+}
+#papellido{
+	margin-top:1%;
+}
+#apellido{
+	width:50%;
+}
+#ppais{
+	margin-top:1%;
+}
+#pais{
+	width:50%;
+}
+#sexo{
+	margin-top:1%;
+}
+#foto{
+	margin-top:1%;
+}
+#modificar{
+	margin-left:2%;
+	margin-top:2%;
+}
+#miperfil{
+	margin-top:2%;
+	margin-left:7%;
+}
+#info{
+	margin-top:1%;
+}
+#informacion{
+	margin-left:-20%;
+}
+#infoperfil{
+	width:50%; 
+}
+#fotofondo{
+	background-image: url("../imagenes/9julio.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:69%;
+	height:89%;
+	margin-left:40%;
+	margin-top:-49%;
+}

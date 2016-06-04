@@ -1,0 +1,19 @@
+#bodycontacto{
+	height:86%;
+	width:100%;
+	background-image : url("../imagenes/fondocontacto.jpg"); 
+	background-size: cover;
+    background-position: center;
+}
+#contenedorformulario{
+	margin-left:22%;
+	margin-top:8%;  
+	width:50%;
+	height:50%;
+}
+.form-control-text{
+	width:70%;
+}
+.form-group-botones{
+	padding-top:2%;
+}

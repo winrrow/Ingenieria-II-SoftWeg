@@ -1,0 +1,55 @@
+#paisajemiperfil{
+	width:100%;
+	height:18%;
+	border-style:solid;
+	background-image: url("../imagenes/miperfil.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#tituloperfil{
+	color:black;
+	margin-left:40%; 
+}
+#fotoper{
+	border-style: solid;
+	width:19%;
+	height:36%;
+	margin-top:3%;
+	margin-left:15%;
+}
+#infoper{
+	width:40%;
+	height:50%;
+	border-style:solid;
+	margin-left:40%;
+	margin-top:-17%;
+}
+.p{
+	margin-left:2%; 
+	margin-top:4%; 
+}
+#megustan{
+	border-style:solid;
+	margin-top:-6%;
+	width:10%;
+	height:15%;
+	margin-left:20%;
+}
+#pmegusta{
+	margin-top:10%;
+	margin-left:2%;
+}
+#pnomegusta{
+	margin-left:2%;
+}
+#botonesperfil{
+	margin-top:2%;
+	margin-left:20%;
+	padding-left: 15%;
+}
+#modificarperfil{
+	padding-left:1%; 
+}
+#publicarcouch{
+	padding-left:1%;
+}

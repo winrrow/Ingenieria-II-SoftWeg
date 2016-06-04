@@ -1,0 +1,85 @@
+#headconopciones{
+	background-color:white; 
+	width: 100%;
+	height:16.5%; 
+}
+#contenedorimagen{
+	width:100%;
+	height:100%; 
+}
+#botonesmenu{
+	margin-top:-5%;  
+	margin-left:70%;
+} 
+#herefinicio{
+	color:black;
+	text-decoration:none;
+}
+#herefquienessomos{
+	color:black;
+	padding-left:5%;
+	text-decoration:none; 
+}
+#herefcontacto{
+	color:black;
+	padding-left:5%;
+	text-decoration:none;
+}
+#divimagenprincipal{
+	background-image : url("../imagenes/fondo2.png");
+	height:86%;
+	width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#iniciosesion{
+	padding-left:80%;
+	padding-top:2%; 
+}
+.inputbuscar{
+	display:inline-block;
+	margin-top:10%;
+	width:20%;
+}
+#botonbuscarultimos{
+	margin-top:5%;
+	margin-left:35%
+}
+#divquienessomos{
+	height:86%;
+	width:100%;
+	background-image : url("../imagenes/mundo.jpg"); 
+	background-size: cover;
+    background-position: center;
+}
+#contenedordeparrafo{
+	width:55%;
+	margin-left:22%;
+	padding-top:15%; 
+}
+#parrafoquienessomos{
+	text-align:justify;
+	color:white;
+	font-family:Helvetica;
+	font-weight: 900;
+}
+#bodycontacto{
+	height:86%;
+	width:100%;
+	background-image : url("../imagenes/fondocontacto.jpg"); 
+	background-size: cover;
+    background-position: center;
+}
+#contenedorformulario{
+	margin-left:22%;
+	margin-top:8%;  
+	width:50%;
+	height:50%;
+}
+.form-control-text{
+	width:70%;
+}
+.form-group-botones{
+	padding-top:2%;
+}

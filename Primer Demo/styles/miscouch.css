@@ -1,0 +1,59 @@
+#paisajemiperfil{
+	width:100%;
+	height:18%;
+	border-style:solid;
+	background-image: url("../imagenes/miperfil.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#tituloperfil{
+	color:black;
+	margin-left:40%; 
+}
+#color{
+	background-color:#BEFFCE;
+}
+#botonesperfil{
+	margin-top:2%;
+	margin-left:25%;
+	padding-left: 15%;
+}
+#imagen{
+	margin-top:5%; 
+	border-style: solid;
+	margin-left:12%;
+	width:20%;
+	height:30%;
+}	
+#info{
+	border-style:solid;
+	width:35%;
+	height:40%;
+	margin-left:40%;
+	margin-top:-16%; 
+}
+#boton{
+	width:20%;
+	height:20%;
+	margin-left:80%;
+	margin-top:-10%;
+}
+#otrosdatos{
+	margin-left:55%;
+	margin-top:-25%;
+}
+#botonesperfilad{
+	margin-top:2%;
+	margin-left:13%;
+	padding-left: 15%;
+
+}
+#sincouch{
+	width:50%;
+	height:100%;
+	background-size: cover;
+	margin-left:25%; 
+	margin-top:1%;
+	background-repeat:no-repeat; 
+	background-image : url("../imagenes/nohaycouchspublicados.png"); 
+}

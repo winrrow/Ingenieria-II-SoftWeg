@@ -1,0 +1,34 @@
+#titulopremium{
+	margin-left:35%;
+}
+#mail{
+	margin-top:1%;
+}
+.p{
+	margin-top:1%;
+}
+.in{
+	width:30%;
+}
+.ra{
+	margin-left:2%; 
+}
+#fotopremium{
+	width:60%;
+	height:80%;
+	border-style:solid;
+	margin-left:45%;
+	margin-top:-62%;
+	background-image: url("../imagenes/9julio.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#paispremium{
+	margin-top:1%; 
+}
+#paispremiumselect{
+	width:30%; 
+}
+#enviarRegistro{
+	margin-top:1%;
+}

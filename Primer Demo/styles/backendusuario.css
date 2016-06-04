@@ -1,0 +1,6 @@
+#foto{
+	width:100%;
+	height:86%;
+	background-image: url("../imagenes/bariloche.jpg");
+	background-size: cover;
+}
