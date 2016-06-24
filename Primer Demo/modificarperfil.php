@@ -8,6 +8,7 @@ $mail=$_SESSION["mail"];
 						$apellido=$row["apellido"];
 						$pais=$row["pais"];
 						$descripcion=$row["descripcion"];
+                                                $fotoperfil=$row['fotoperfil'];
 					}
 							
 ?>
@@ -28,7 +29,7 @@ $mail=$_SESSION["mail"];
       <form class="form-signin" method="POST"  action="actualizarperfil.php"  enctype="multipart/form-data">
 		        <h2 class="form-signin-heading" id="modificarperfil">Modificar Perfil</h2>
 		        
-		       <div id="infoperfil"> 
+		       <div id="infoperfil" class="col-md-6"> 
 			       
 					<span class="textInput" id="mailspan">Mail</span>
 			        <span><input class="form-control textInput2" name="mail" value= <?php echo $mail ?> required="" autofocus="" type="email" id="mailRegistro"></span>
@@ -279,14 +280,26 @@ $mail=$_SESSION["mail"];
 			        </div>
 			              
 			        <div class="fotoPremiumAltaCoach" >
+                                    
+                                        <p>Cambiar foto</p>
 	            			<input name="foto" id="foto" type="file">
 	        		</div>
 
+                                <p class="textInput" style="margin-top:3%;">Contraseña</p>
+                                <input class="form-control textInput2 in" minlength="1" Id="contrasena-per-1" name="contrasena-per-1" placeholder="Escribe tu contraseña" required="" type="password">
+
+                                <p class="textInput" style="margin-top:3%;">Vuelve a escribir la contraseña</p>
+                                <input class="form-control textInput2 in" minlength="1"  id="contrasena-per-2"name="contrasena-per-2" placeholder="Escribe tu contraseña nuevamente" required="" type="password">
+
+                                
+                                
 			       	 <a id="miperfil" href="miperfil.php" class="btn btn-lg btn-success btn-blockx"> Mi perfil </a>
-			         <button class="btn btn-lg btn-success btn-blockx" id="modificar" type="submit" onclick="window.location=miperfil.php">Modificar Perfil</button>
+			         <button class="btn btn-lg btn-success btn-blockx" id="modificar" type="submit">Modificar Perfil</button>
     			</div>
-    			<div id="fotofondo">
-    				
+    			<div id="fotofondo" class="col-md-6">
+                            <?php 
+                        echo "<img src='$fotoperfil' width=500 height=400 alt='Foto de perfil'>";
+                            ?>
     			</div>
     </form>
     </div>

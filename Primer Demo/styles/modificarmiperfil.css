@@ -49,11 +49,11 @@
 	width:50%; 
 }
 #fotofondo{
-	background-image: url("../imagenes/9julio.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	width:69%;
-	height:89%;
-	margin-left:40%;
+	margin-left:50%;
 	margin-top:-49%;
+}
+
+.fotoPremiumAltaCoach{
+    margin-top:2%;
+    margin-bottom: 1%;
 }

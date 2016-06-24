@@ -1,0 +1,61 @@
+#tituloPublicarCouch{
+     font-family: arial, helvetica,sans-serif;
+    font-size: 50px;
+    text-align:center;
+}
+#publicarCouch{
+    
+    margin-top:5.5%;
+    margin-left:45%;
+    
+}
+#descripcionAltaCouch{
+    width:100%;height:150px; border-radius:7px;   
+}
+
+.inputLocalizacion{
+    width:49.7%;
+    display:inline-block;
+}
+
+.inputAltaCouch{
+    margin-top:1%;
+    margin-bottom:1%;
+    font-weight: bold;
+}
+.fotoPremiumAltaCouch{
+    margin-top:1.5%;
+    margin-left:0.1%;
+    width:49.7%;
+    display:inline-block;
+    padding:-5%;
+   
+}
+#anadirFotoTexto{
+    margin-left:25%;
+    font-weight: bold;
+}
+
+#anadirFotoTexto2{
+    margin-left:28%;
+    margin-top:0.1%;
+    font-size: 65%;
+}
+#haztePremiumAltaCoach{
+    margin-left:25%;
+}
+#volverperfil{
+    margin-left:5%;
+    margin-top: 5%;
+}
+#divdesde{
+    margin-top:4%;
+}
+#divhasta{  
+}
+#desde{
+    width:20%;
+}
+#hasta{
+    width:20%;
+}

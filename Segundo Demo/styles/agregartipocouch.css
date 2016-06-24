@@ -1,0 +1,51 @@
+#tituloPublicarCouch{
+     font-family: arial, helvetica,sans-serif;
+    font-size: 50px;
+    text-align:center;
+}
+#tipocouch{
+	width:40%;
+}
+#publicartipocouch{
+	margin-top:5%;
+	margin-left:3%;
+}
+#volverperfil{
+	margin-top:5%;
+	margin-left:3%;
+}
+#container{
+	width:100%;
+	height:90%;
+	background-image: url("../imagenes/fondo2.png ");
+}
+#container2{
+	width:100%;
+	margin-top:15%;
+}
+#formagregar{
+	width:57%;
+}
+#formbot{
+	height:97%;
+	margin-top:-14%; 
+	width:100%;
+}
+#input{
+	width:70%;
+}
+#agregar{
+	width:20%;
+	margin-bottom:2%;
+}
+#izquierdo{
+	margin-top:2%;
+	float:left;
+	width:40%;
+}
+#derecho{
+	margin-top:2%;
+	margin-left:20%;
+	float:left;
+	width:40%;
+}

@@ -1,0 +1,70 @@
+#modificarperfil{
+	margin-left:35%;
+}
+#mailspan{
+	margin-top:1%;
+}
+#mailRegistro{
+	width:50%;
+}
+#pnombre{
+	margin-top:1%;
+}
+#nombre{
+	width:50%;
+}
+#papellido{
+	margin-top:1%;
+}
+#apellido{
+	width:50%;
+}
+#ppais{
+	margin-top:1%;
+}
+#pais{
+	width:50%;
+}
+#sexo{
+	margin-top:1%;
+}
+#foto{
+	margin-top:1%;
+}
+#modificar{
+	margin-left:2%;
+	margin-top:2%;
+}
+#miperfil{
+	margin-top:2%;
+	margin-left:7%;
+}
+#info{
+	margin-top:1%;
+}
+#informacion{
+	margin-left:-20%;
+}
+#infoperfil{
+	width:50%; 
+}
+#fotofondo{
+	margin-left:50%;
+	margin-top:-49%;
+}
+
+.fotoPremiumAltaCoach{
+    margin-top:2%;
+    margin-bottom: 1%;
+}
+
+.subtitulosModificar{
+    font-size:120%;
+    margin-top:5%;
+    margin-top:2%;
+    font-weight: bold;
+}
+
+.ponerContra{
+    margin-top:3%;
+}

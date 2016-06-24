@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.5.1
+- https://www.phpmyadmin.net
+-
+- Servidor: 127.0.0.1
+- Tiempo de generación: 20-06-2016 a las 21:40:04
+- Versión del servidor: 10.1.13-MariaDB
+- Versión de PHP: 5.6.21
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="couchinn" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="comentarios">
+                CREATE TABLE `comentarios` (
+                  `id_comentario` int(20) NOT NULL AUTO_INCREMENT,
+                  `fecha_hora` datetime NOT NULL,
+                  `mail` varchar(30) NOT NULL,
+                  `id_couch` int(5) NOT NULL,
+                  PRIMARY KEY (`id_comentario`),
+                  KEY `mail` (`mail`),
+                  KEY `id_couch` (`id_couch`),
+                  CONSTRAINT `fk_idcouch` FOREIGN KEY (`id_couch`) REFERENCES `couchs` (`id_couch`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+                  CONSTRAINT `fk_mail_comentario` FOREIGN KEY (`mail`) REFERENCES `usuarios` (`mail`) ON DELETE NO ACTION ON UPDATE NO ACTION
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="couchs">
+                CREATE TABLE `couchs` (
+                  `id_couch` int(4) NOT NULL AUTO_INCREMENT,
+                  `descripcion` text NOT NULL,
+                  `titulo` varchar(100) NOT NULL,
+                  `capacidad` int(3) NOT NULL,
+                  `megusta` int(6) NOT NULL,
+                  `nomegusta` int(6) NOT NULL,
+                  `mail` varchar(100) NOT NULL,
+                  `id_tipo_couch` int(30) NOT NULL,
+                  `ciudad` varchar(100) NOT NULL,
+                  `provincia` varchar(100) NOT NULL,
+                  `fecha_desde` date NOT NULL,
+                  `fecha_hasta` date NOT NULL,
+                  `fotocouch` varchar(300) NOT NULL,
+                  PRIMARY KEY (`id_couch`),
+                  KEY `id_tipo_couch` (`id_tipo_couch`),
+                  CONSTRAINT `id_tipo_couch` FOREIGN KEY (`id_tipo_couch`) REFERENCES `tipo_couchs` (`id_tipo_couch`) ON DELETE NO ACTION ON UPDATE NO ACTION
+                ) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="reservas">
+                CREATE TABLE `reservas` (
+                  `id_reserva` int(5) NOT NULL AUTO_INCREMENT,
+                  `fecha_desde` date NOT NULL,
+                  `fecha_hasta` date NOT NULL,
+                  `mail` varchar(30) NOT NULL,
+                  `id_couch` int(4) NOT NULL,
+                  `estado` varchar(25) NOT NULL,
+                  PRIMARY KEY (`id_reserva`),
+                  KEY `mail` (`mail`),
+                  CONSTRAINT `reservas_ibfk_1` FOREIGN KEY (`mail`) REFERENCES `usuarios` (`mail`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="tipo_couchs">
+                CREATE TABLE `tipo_couchs` (
+                  `id_tipo_couch` int(5) NOT NULL AUTO_INCREMENT,
+                  `nombre_tipocouch` varchar(20) NOT NULL,
+                  `habilitado` varchar(2) NOT NULL,
+                  `contador_usado` int(200) NOT NULL,
+                  PRIMARY KEY (`id_tipo_couch`),
+                  UNIQUE KEY `nombre_tipocouch` (`nombre_tipocouch`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="usuarios">
+                CREATE TABLE `usuarios` (
+                  `id_usuario` int(15) NOT NULL AUTO_INCREMENT,
+                  `nombre_usuario` varchar(100) NOT NULL,
+                  `apellido` varchar(100) NOT NULL,
+                  `mail` varchar(100) NOT NULL,
+                  `contrasena` varchar(20) NOT NULL,
+                  `megusta` int(10) NOT NULL,
+                  `nomegusta` int(10) NOT NULL,
+                  `fecha_nac` date NOT NULL,
+                  `fotoperfil` varchar(300) NOT NULL,
+                  `es_admin` tinyint(1) NOT NULL,
+                  `es_premium` tinyint(1) NOT NULL,
+                  `pais` varchar(50) NOT NULL,
+                  `genero` varchar(10) NOT NULL,
+                  `descripcion` varchar(2000) NOT NULL,
+                  PRIMARY KEY (`id_usuario`),
+                  UNIQUE KEY `mail` (`mail`),
+                  UNIQUE KEY `id_usuario` (`id_usuario`),
+                  KEY `id_usuario_2` (`id_usuario`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de datos: 'couchinn'
+    -->
+    <database name="couchinn">
+        <!-- Tabla comentarios -->
+        <!-- Tabla couchs -->
+        <table name="couchs">
+            <column name="id_couch">35</column>
+            <column name="descripcion">IglÃº calentito frente al mar</column>
+            <column name="titulo">IglÃº en la AntÃ¡rtida</column>
+            <column name="capacidad">1</column>
+            <column name="megusta">0</column>
+            <column name="nomegusta">0</column>
+            <column name="mail">admin@couchinn.com</column>
+            <column name="id_tipo_couch">62</column>
+            <column name="ciudad">Trevelin</column>
+            <column name="provincia">Chubut</column>
+            <column name="fecha_desde">2016-06-04</column>
+            <column name="fecha_hasta">2016-09-16</column>
+            <column name="fotocouch">fotos_couch/Penguins.jpg</column>
+        </table>
+        <table name="couchs">
+            <column name="id_couch">36</column>
+            <column name="descripcion">dasds</column>
+            <column name="titulo">choza en hawaii</column>
+            <column name="capacidad">1</column>
+            <column name="megusta">0</column>
+            <column name="nomegusta">0</column>
+            <column name="mail">admin@couchinn.com</column>
+            <column name="id_tipo_couch">62</column>
+            <column name="ciudad">San MartÃ­n</column>
+            <column name="provincia">San Juan</column>
+            <column name="fecha_desde">2016-06-04</column>
+            <column name="fecha_hasta">2016-06-26</column>
+            <column name="fotocouch">fotos_couch/Koala.jpg</column>
+        </table>
+        <table name="couchs">
+            <column name="id_couch">37</column>
+            <column name="descripcion">Estupenda caja de carton</column>
+            <column name="titulo">Caja de cartÃ³n</column>
+            <column name="capacidad">1</column>
+            <column name="megusta">0</column>
+            <column name="nomegusta">0</column>
+            <column name="mail">admin@couchinn.com</column>
+            <column name="id_tipo_couch">62</column>
+            <column name="ciudad">Zonda</column>
+            <column name="provincia">San Juan</column>
+            <column name="fecha_desde">2016-06-09</column>
+            <column name="fecha_hasta">2016-07-09</column>
+            <column name="fotocouch">fotos_couch/Desert.jpg</column>
+        </table>
+        <table name="couchs">
+            <column name="id_couch">40</column>
+            <column name="descripcion">fsfsdfds</column>
+            <column name="titulo">asdsad</column>
+            <column name="capacidad">1</column>
+            <column name="megusta">0</column>
+            <column name="nomegusta">0</column>
+            <column name="mail">daro@couchinn.com</column>
+            <column name="id_tipo_couch">62</column>
+            <column name="ciudad">Yerba Buena</column>
+            <column name="provincia">TucumÃ¡n</column>
+            <column name="fecha_desde">2016-06-10</column>
+            <column name="fecha_hasta">2016-06-24</column>
+            <column name="fotocouch">fotos_couch/123.png</column>
+        </table>
+        <!-- Tabla reservas -->
+        <table name="reservas">
+            <column name="id_reserva">17</column>
+            <column name="fecha_desde">2016-06-21</column>
+            <column name="fecha_hasta">2016-06-30</column>
+            <column name="mail">daro@couchinn.com</column>
+            <column name="id_couch">35</column>
+            <column name="estado">Esperando</column>
+        </table>
+        <table name="reservas">
+            <column name="id_reserva">18</column>
+            <column name="fecha_desde">2016-06-22</column>
+            <column name="fecha_hasta">2016-06-24</column>
+            <column name="mail">daro@couchinn.com</column>
+            <column name="id_couch">40</column>
+            <column name="estado">Esperando</column>
+        </table>
+        <table name="reservas">
+            <column name="id_reserva">19</column>
+            <column name="fecha_desde">2016-06-20</column>
+            <column name="fecha_hasta">2016-06-22</column>
+            <column name="mail">daro@couchinn.com</column>
+            <column name="id_couch">35</column>
+            <column name="estado">Esperando</column>
+        </table>
+        <table name="reservas">
+            <column name="id_reserva">20</column>
+            <column name="fecha_desde">2016-06-22</column>
+            <column name="fecha_hasta">0000-00-00</column>
+            <column name="mail">admin@couchinn.com</column>
+            <column name="id_couch">35</column>
+            <column name="estado">Esperando</column>
+        </table>
+        <table name="reservas">
+            <column name="id_reserva">21</column>
+            <column name="fecha_desde">2016-06-21</column>
+            <column name="fecha_hasta">2016-06-21</column>
+            <column name="mail">admin@couchinn.com</column>
+            <column name="id_couch">40</column>
+            <column name="estado">Esperando</column>
+        </table>
+        <!-- Tabla tipo_couchs -->
+        <table name="tipo_couchs">
+            <column name="id_tipo_couch">59</column>
+            <column name="nombre_tipocouch">Parques</column>
+            <column name="habilitado">si</column>
+            <column name="contador_usado">0</column>
+        </table>
+        <table name="tipo_couchs">
+            <column name="id_tipo_couch">60</column>
+            <column name="nombre_tipocouch">Casas</column>
+            <column name="habilitado">no</column>
+            <column name="contador_usado">3</column>
+        </table>
+        <table name="tipo_couchs">
+            <column name="id_tipo_couch">61</column>
+            <column name="nombre_tipocouch">Chacras</column>
+            <column name="habilitado">si</column>
+            <column name="contador_usado">1</column>
+        </table>
+        <table name="tipo_couchs">
+            <column name="id_tipo_couch">62</column>
+            <column name="nombre_tipocouch">sofa</column>
+            <column name="habilitado">si</column>
+            <column name="contador_usado">2</column>
+        </table>
+        <!-- Tabla usuarios -->
+        <table name="usuarios">
+            <column name="id_usuario">28</column>
+            <column name="nombre_usuario">Admin</column>
+            <column name="apellido">Admin</column>
+            <column name="mail">admin@couchinn.com</column>
+            <column name="contrasena">123123</column>
+            <column name="megusta">0</column>
+            <column name="nomegusta">0</column>
+            <column name="fecha_nac">1995-01-01</column>
+            <column name="fotoperfil">fotos_perfil/Koala.jpg</column>
+            <column name="es_admin">1</column>
+            <column name="es_premium">1</column>
+            <column name="pais">Argentina</column>
+            <column name="genero">male</column>
+            <column name="descripcion">Soy un Koala</column>
+        </table>
+        <table name="usuarios">
+            <column name="id_usuario">29</column>
+            <column name="nombre_usuario">Dario</column>
+            <column name="apellido">Gonzalez Leegstra</column>
+            <column name="mail">daro@couchinn.com</column>
+            <column name="contrasena">123456</column>
+            <column name="megusta">0</column>
+            <column name="nomegusta">0</column>
+            <column name="fecha_nac">1995-10-07</column>
+            <column name="fotoperfil">fotos_perfil/default.jpg</column>
+            <column name="es_admin">0</column>
+            <column name="es_premium">0</column>
+            <column name="pais">Argentina</column>
+            <column name="genero">male</column>
+            <column name="descripcion"></column>
+        </table>
+    </database>
+</pma_xml_export>
